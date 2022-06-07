@@ -16,10 +16,12 @@ export default function Home() {
       </Head>
       <button
         onClick={authenticate}
-        className="bg-yellow-300 px-8 py-5 rounded-xl text-lg animate-pulse"
+        className="bg-yellow-300 px-8 py-5 rounded-xl text-lg animate-pulse align-items-left"
+        top='20000%'
       >
         Login using MetaMask
       </button>
     </div>
   );
+  //coao
 }

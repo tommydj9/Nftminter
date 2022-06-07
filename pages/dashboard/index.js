@@ -19,15 +19,39 @@ function Dashboard() {
   const name = _name.trim();
   const description = _description.trim();
 
+
+
+  let img = ['https://imgs.search.brave.com/yyEXW1Pa0w3AE21swQ4ndtYGle7auEyDowxWzBUtTlQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvbll2/SmZjblNzejhURlph/R2RLS0dhVkpxQ09i/U0ZTMzg3djYtNkZ2/MXpiOC5qcGc_YXV0/bz13ZWJwJnM9YTk0/MTk1YTQwOWVjMWRi/MDlkNjBhZDJkZTdk/MDM3YzI0NmY5MDUx/OQ', 'https://imgs.search.brave.com/BNeR3UwPn7ARcre43e9wRuOgzMD2MZfOrqbGCQmDk54/rs:fit:563:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/Y3VDX3ZkOVg0SGtC/RzNRRU02MTRRSGFH/UCZwaWQ9QXBp', 'https://imgs.search.brave.com/OnDhJ9MNRqk5z4T03Do8OVumlTxYNixhv-JlJUIMHEw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wY2h0/ZWNobm9sb2dpZXMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzA4L0NvbW1v/bi1TaWducy1vZi1h/LUNvbXB1dGVyLUhh/Y2stYW5kLUhvdy10/by1QcmV2ZW50LUl0/LmpwZw'];
+
+
+
+
+
+
+  let index = Math.floor(Math.random() * img.length);
+  let selected_img = img[index];
+
+
+
+
+
+  console.log(selected_img);
+
   const onSubmit = async (e) => {
 
     setIsLoading(true);
     e.preventDefault();
 
     try {
+
+
+
+
       alert('wait 10 or more sec because the blockchain is a bit slow');
 
-      const fileUrl = 'https://imgs.search.brave.com/BNeR3UwPn7ARcre43e9wRuOgzMD2MZfOrqbGCQmDk54/rs:fit:563:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/Y3VDX3ZkOVg0SGtC/RzNRRU02MTRRSGFH/UCZwaWQ9QXBp';
+      // These will be retrieved from a list of mintable NFTs, coming from a server/table
+      const fileUrl = selected_img;
+      const fileValue = "10000000000000000"; // Wei --> 0.01 ETH
 
       // Generate metadata and save to IPFS
       const metadata = {
@@ -46,7 +70,7 @@ function Dashboard() {
       const contract = new web3.eth.Contract(contractABI, contractAddress);
       const response = await contract.methods
         .mint(metadataurl)
-        .send({ from: user.get("ethAddress") });
+        .send({ from: user.get("ethAddress"), value: fileValue });
 
       // Get token id
       const tokenSendEthId = response.events.Transfer.returnValues.tokenId;
