@@ -1,0 +1,73 @@
+
+
+.prova{
+    background-color: #000000;
+
+    border: 2px solid rgb(46, 45, 45);
+    border-radius: 20px;
+    font-size: 20px;
+
+    padding: 15px;
+
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+
+    color: rgb(255, 255, 255);
+}
+
+
+.title{
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 520px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.bg{
+    background-color: #262c6e;
+}
+
+.img{
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 35px;
+}
+
+.acc{
+
+    display: flex;
+    position: absolute;
+    top: 35px;
+    right: 120px;
+    color: white;
+    
+}
+
+.address{
+
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 170px;
+
+}
+
+.log{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    
+}
+
+.prevImg{
+    padding-bottom: 10px;
+    
+}

@@ -35,7 +35,9 @@ function Dashboard() {
 
 
 
+
   console.log(selected_img);
+  const fileUrl = selected_img;
 
   const onSubmit = async (e) => {
 
@@ -47,10 +49,10 @@ function Dashboard() {
 
 
 
-      alert('wait 10 or more sec because the blockchain is a bit slow');
+
 
       // These will be retrieved from a list of mintable NFTs, coming from a server/table
-      const fileUrl = selected_img;
+
       const fileValue = "10000000000000000"; // Wei --> 0.01 ETH
 
       // Generate metadata and save to IPFS
@@ -126,13 +128,15 @@ function Dashboard() {
       }
       <form onSubmit={onSubmit}>
         <div>
+          <img src={selected_img} className='w-50 h-60 prevImg'></img>
           <button className="flex justify-left">
 
-            <img src="https://imgs.search.brave.com/W63rDUMxUMiWOiqveGKz7_aYwNjisc9JL8MNbXRy7tc/rs:fit:980:980:1/g:ce/aHR0cDovL2Nkbi5v/bmxpbmV3ZWJmb250/cy5jb20vc3ZnL2lt/Z18yMTUwNTkucG5n" className="w-10 h-45"></img>
+
+
 
 
           </button>
-          <h2 className="text-red-100 pt-2 flex items-center jusify-center">{contractAddress}</h2>
+          <h2 className="address">{contractAddress}</h2>
           <input
             type="text"
             className="border-[1px] p-2 text-lg border-black w-full"
@@ -151,6 +155,10 @@ function Dashboard() {
           />
         </div>
 
+
+
+
+
         <button
 
           type="submit"
@@ -162,11 +170,12 @@ function Dashboard() {
         <button
           onClick={logout}
 
-          className="mt-5 w-full p-5 bg-red-700 text-white text-lg rounded-xl">
+          className="w-30 p-5 bg-red-700 text-white text-lg rounded-xl log">
 
           Logout
         </button>
       </form>
+      <img src="https://imgs.search.brave.com/W63rDUMxUMiWOiqveGKz7_aYwNjisc9JL8MNbXRy7tc/rs:fit:980:980:1/g:ce/aHR0cDovL2Nkbi5v/bmxpbmV3ZWJmb250/cy5jb20vc3ZnL2lt/Z18yMTUwNTkucG5n" className="w-10 h-45 acc"></img>
     </div>
   );
 }

@@ -2,6 +2,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
+
+
+
 export default function Home() {
   const { authenticate, isAuthenticated, logout } = useMoralis();
   const router = useRouter();
@@ -13,14 +16,22 @@ export default function Home() {
       <Head>
         <title>NFT Minter</title>
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
+
+      <img src='/images/logo.png' className="w-40 h-40 img" />
+
+      <h1 className="title">NftMinter</h1>
+
       <button
         onClick={authenticate}
-        className="bg-yellow-300 px-8 py-5 rounded-xl text-lg animate-pulse align-items-left"
-        top='20000%'
+        className="prova"
       >
-        Login using MetaMask
+        Login MetaMask
       </button>
+
+
+
     </div>
   );
   //coao
