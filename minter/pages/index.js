@@ -21,14 +21,14 @@ export default function Home() {
   return (
     <div className="flex w-screen h-screen items-center justify-center">
       <Head>
-        <title>NFT Minter</title>
+        <title>DeathTune™</title>
         <link rel="icon" href="/images/logo.png" />
 
       </Head>
 
       <img src='/images/logo.png' className="w-40 h-40 img" />
 
-      <h1 className="title">NftMinter</h1>
+      <h1 className="title">DeathTune</h1>
 
       <button onClick={authenticate} className="prova"><img src="/images/wallet.png" className="wallte2"></img>Log with wa</button>
 
@@ -115,7 +115,7 @@ export default function Home() {
             <a href="https://flowbite.com/" class="flex items-center">
               <img src="/images/logo.png" class="mr-3 h-8" alt="FlowBite Logo" img />
 
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NftMinter</span>
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DeathTune™</span>
               <h1 className="testo">hd</h1>
             </a>
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" hr />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">NftMinter™</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">DeathTune™</a>. All Rights Reserved.
           </span>
           <h1 className="testo">sh</h1>
           <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
