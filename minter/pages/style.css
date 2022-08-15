@@ -24,7 +24,6 @@
     display: flex;
     position: absolute;
     top: 5px;
-    
     align-self: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
@@ -90,4 +89,9 @@
     display: flex;
     position: absolute;
     top: 600px;
+    background-color: #262c6e;
+}
+
+.testo{
+    color: #262c6e;
 }
