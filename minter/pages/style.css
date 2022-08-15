@@ -24,7 +24,8 @@
     display: flex;
     position: absolute;
     top: 5px;
-    right: 520px;
+    
+    align-self: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
