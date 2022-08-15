@@ -30,12 +30,7 @@ export default function Home() {
 
       <h1 className="title">NftMinter</h1>
 
-      <button
-        onClick={authenticate}
-        className="prova"
-      >
-        Login MetaMask
-      </button>
+      <button onClick={authenticate} className="prova"><img src="/images/wallet.png" className="wallte2"></img>Log with wa</button>
 
 
       <nav class="bg-gray-800 py-1 rounded-md navbar">
@@ -68,7 +63,7 @@ export default function Home() {
 
                   <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
 
-                  <button onClick={authenticate} class="bg-yellow-400 text-black-300 hover:bg-yellow-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Login</button>
+                  <button onClick={authenticate} class="bg-yellow-400 text-black-300 hover:bg-yellow-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"><img src="/images/wallet.png" className="wallte"></img>Connect wa</button>
                 </div>
               </div>
             </div>
