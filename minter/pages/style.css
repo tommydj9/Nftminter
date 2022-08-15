@@ -1,7 +1,7 @@
 
 
 .prova{
-    background-color: #000000;
+    background-color: #facd07;
 
     border: 2px solid rgb(46, 45, 45);
     border-radius: 20px;
@@ -14,7 +14,7 @@
     top: 50px;
     right: 10px;
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -70,4 +70,23 @@
 .prevImg{
     padding-bottom: 10px;
     
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 200px;
+}
+
+.navbar2{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 450px;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    top: 600px;
 }
