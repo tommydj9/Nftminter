@@ -79,7 +79,7 @@
 .navbar{
     display: flex;
     position: absolute;
-    top: 200px;
+    top: 170px;
 }
 
 .navbar2{
@@ -92,7 +92,7 @@
 .footer{
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     background-color: #262c6e;
 }
 
@@ -121,4 +121,16 @@
     top: -1px;
     right: -5px;
 
+}
+
+.tune{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nft{
+    display: flex;
+    position: absolute;
+    top: 175px;
+    height: 550px;
+    width: 900px;
 }

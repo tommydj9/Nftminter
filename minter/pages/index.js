@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { Component, useEffect } from "react";
 import { useMoralis } from "react-moralis";
+import GoogleAd from "./googleAd";
 
 
 
@@ -107,6 +108,12 @@ export default function Home() {
         </div>
       </nav>
 
+      <GoogleAd slot="2175794824" classNames="page-top" />
+
+
+
+      <img className='nft' src="/images/nft.png"></img>
+
 
 
       <footer class="p-4 sm:p-6 dark:bg-gray-900 footer" className='footer'>
@@ -144,7 +151,7 @@ export default function Home() {
             </div>
             <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-              <ul class="text-gray-600 dark:text-gray-400">
+              <ul class="text-gray-00 dark:text-gray-400">
                 <li class="mb-4">
                   <a href="#" class="hover:underline">Privacy Policy</a>
                 </li>
