@@ -6,6 +6,8 @@ import GoogleAd from "./googleAd";
 
 
 
+
+
 export default function Home() {
   const { authenticate, isAuthenticated, logout } = useMoralis();
   const router = useRouter();
@@ -58,13 +60,13 @@ export default function Home() {
               <div class="hidden sm:block sm:ml-6">
                 <div class="flex space-x-4">
 
-                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
+                  <a href="#" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
 
-                  <button onClick={avvertimento} class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Minting</button>
+                  <a onClick={avvertimento} className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Minting</a>
 
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                  <a href="http://127.0.0.1:5500/index2.html" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Wheel Spin</a>
 
-                  <button onClick={authenticate} class="bg-yellow-400 text-black-300 hover:bg-yellow-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"><img src="/images/wallet.png" className="wallte"></img>Connect wa</button>
+                  <button onClick={authenticate} className="bg-yellow-400 text-black-300 hover:bg-yellow-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"><img src="/images/wallet.png" className="wallte"></img>Connect wa</button>
                 </div>
               </div>
             </div>
@@ -81,7 +83,7 @@ export default function Home() {
               <div class="ml-3 relative">
                 <div>
                   <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                    <span class="sr-only">Open user menu</span>
+                    <span className="sr-only">Open user menu</span>
                     <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" img />
                   </button>
                 </div>
@@ -112,7 +114,9 @@ export default function Home() {
 
 
 
-      <img className='nft' src="/images/nft.png"></img>
+      {/* <img className='nft' src="/images/nft.png"></img> */}
+
+
 
 
 

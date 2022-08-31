@@ -82,12 +82,7 @@
     top: 170px;
 }
 
-.navbar2{
-    display: flex;
-    position: absolute;
-    top: 90px;
-    left: 450px;
-}
+
 
 .footer{
     display: flex;
@@ -130,7 +125,12 @@
 .nft{
     display: flex;
     position: absolute;
-    top: 175px;
-    height: 550px;
-    width: 900px;
+    top: 148px;
+    height: 600px;
+    width: 1000px;
+}
+
+.nft :hover{
+    height: 700px;
+    width: 100px;
 }
