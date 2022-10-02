@@ -116,9 +116,9 @@ export default function Home() {
 
       {/* <img className='nft' src="/images/nft.png"></img> */}
 
-      <button onClick={authenticate} className="advertising"><img src="/images/nftBored.png" className="bored"></img><img src="/images/Primo_NFt.png" className="nft1"></img></button>
+      <button onClick={authenticate} className="advertising"><img src="/images/nftBored.png" className="bored"></img><img src="/images/Primo_NFt.png" className="nft1"></img><h2 className="newCollections">New collections</h2></button>
 
-      <h2 className="newCollections">New collections</h2>
+
 
 
 
