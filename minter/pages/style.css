@@ -132,5 +132,63 @@
 
 .nft :hover{
     height: 700px;
-    width: 100px;
+   width: 100px;
+}
+
+.advertising{
+    background-color: #facd07;
+    
+    
+
+    border: 2px solid rgb(46, 45, 45);
+    border-radius: 10px;
+    font-size: 20px;
+
+    padding: 10px;
+    margin: 8px;
+
+    width: 500px;
+    height: 370px;
+
+    display: flex;
+    position: absolute;
+    top: 250px;
+
+
+
+}
+
+.advertising:hover{
+    transition: width 1s, height 2s;
+    width: 520px;
+    height: 390px;
+    background-color: #e2ba05;
+
+}
+
+.newCollections{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    left: 645px;
+    top: 280px;
+}
+
+.bored{
+    width: 290px;
+    height: 290px;
+    display: flex;
+    position: absolute;
+    align-self: center;
+    top: 50px;
+}
+
+
+.nft1{
+    width: 430px;
+    height: 260px;
+    display: flex;
+    position: absolute;
+    left: 180px;
+    top: 80px;
 }

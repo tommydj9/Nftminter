@@ -64,7 +64,7 @@ export default function Home() {
 
                   <a onClick={avvertimento} className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Minting</a>
 
-                  <a href="http://127.0.0.1:5500/index2.html" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Wheel Spin</a>
+                  <a href="https://tommydj9.github.io/wheel-spin/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Wheel Spin</a>
 
                   <button onClick={authenticate} className="bg-yellow-400 text-black-300 hover:bg-yellow-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"><img src="/images/wallet.png" className="wallte"></img>Connect wa</button>
                 </div>
@@ -115,6 +115,10 @@ export default function Home() {
 
 
       {/* <img className='nft' src="/images/nft.png"></img> */}
+
+      <button onClick={authenticate} className="advertising"><img src="/images/nftBored.png" className="bored"></img><img src="/images/Primo_NFt.png" className="nft1"></img></button>
+
+      <h2 className="newCollections">New collections</h2>
 
 
 
